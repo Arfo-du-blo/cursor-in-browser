@@ -7,9 +7,9 @@ LABEL maintainer="arfo_dublo@boards.digital" \
       org.opencontainers.image.description="Cursor container image allowing access via web browser"
 
 # Set version, display and download link
-ARG CURSOR_VERSION=1.2.0
+ARG CURSOR_VERSION=1.5.0
 ENV DISPLAY=:1
-ENV CURSOR_DOWNLOAD_URL=https://downloads.cursor.com/production/3c325775412a19b2f2147eed6b33f36371f025b0/linux/x64/Cursor-1.2.0-x86_64.AppImage
+ENV CURSOR_DOWNLOAD_URL=https://downloads.cursor.com/production/2f2737de9aa376933d975ae30290447c910fdf46/linux/x64/Cursor-1.5.11-x86_64.AppImage
 
 # Update and install necessary packages
 RUN echo "**** install packages ****" && \
