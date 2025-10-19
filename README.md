@@ -3,9 +3,9 @@
 
 This work have been **strongly** influenced by the following repo: https://github.com/sytone/obsidian-remote
 
-Now available for version 1.2.0 of Cursor for x64 and arm64 architectures.
+All versions of Cursor for x64 and arm64 architectures from **0.47.7** to **1.7.52** are now available !
 
-Images of older **Cursor** versions will also be provided.
+**Cursor** versions with all required files are available under **cursor_versions** folder. The Dockerfile and Dockerfile.arm64 on the root directory are related to the latest version (**1.7.52**).
 
 ### **• Maintained by:**
 
