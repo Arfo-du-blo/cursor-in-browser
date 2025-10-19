@@ -1,0 +1,1 @@
+/Cursor.AppImage --appimage-extract-and-run --no-sandbox --disable-gpu --no-xshm --disable-dev-shm-usage --disable-software-rasterizer
