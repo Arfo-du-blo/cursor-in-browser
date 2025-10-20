@@ -28,7 +28,7 @@ docker run -d \
       -p 8050:8080 \
       -e CUSTOM_USER=cursor_user \
       -e PASSWORD=cursor_password \
-arfodublo/cursor-in-browser:latest
+arfodublo/cursor-in-browser:latest-x64
 ```
 
 Using **Github (ghcr.io)** :
@@ -40,10 +40,10 @@ docker run -d \
       -p 8050:8080 \
       -e CUSTOM_USER=cursor_user \
       -e PASSWORD=cursor_password \
-ghcr.io/arfodublo/cursor-in-browser:latest
+ghcr.io/arfodublo/cursor-in-browser:latest-x64
 ```
 
-You can replace the **:latest** tag by the version and architecture you need (replacing :latest by :1.2.3-x64 or :1.2.3-arm64 for example).
+You can replace the **:latest** tag by the version and architecture you need (replacing :latest-x64 by :latest-arm64 if working on ARM CPU or :1.2.3-x64 or :1.2.3-arm64 if you need a specific version).
 
 ### **• Important notes :**
 
