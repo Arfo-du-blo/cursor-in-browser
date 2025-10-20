@@ -43,7 +43,7 @@ docker run -d \
 ghcr.io/arfodublo/cursor-in-browser:latest-x64
 ```
 
-You can replace the **:latest** tag by the version and architecture you need (replacing :latest-x64 by :latest-arm64 if working on ARM CPU or :1.2.3-x64 or :1.2.3-arm64 if you need a specific version).
+You can replace the **:latest-x64** tag (latest version for AMD processors) by the version and architecture you need (for example replace :latest-x64 by :latest-arm64 if working on ARM CPU or :1.2.3-x64 / :1.2.3-arm64 if you need a specific version).
 
 ### **• Important notes :**
 
