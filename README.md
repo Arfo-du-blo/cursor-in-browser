@@ -35,11 +35,11 @@ Using **Github (ghcr.io)** :
 
 ```
 docker run -d \
-  -v your_path_to/cursor:/cursor \
-  -v your_path_to/config:/config \
-  -p 8050:8080 \
-  -e CUSTOM_USER=cursor_user \
-  -e PASSWORD=cursor_password \
+      -v your_path_to/cursor:/cursor \
+      -v your_path_to/config:/config \
+      -p 8050:8080 \
+      -e CUSTOM_USER=cursor_user \
+      -e PASSWORD=cursor_password \
 ghcr.io/arfodublo/cursor-in-browser:latest
 ```
 
