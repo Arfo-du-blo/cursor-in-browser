@@ -7,6 +7,8 @@ All versions of Cursor for x64 and arm64 architectures from **0.47.7** to **1.7.
 
 **Cursor** versions with all required files are available under **cursor_versions** folder. The Dockerfile and Dockerfile.arm64 on the root directory are related to the latest version (**1.7.52**).
 
+You can use **Github Docker repo** (ghcr.io) or **Docker Hub** to download the image, if you prefer to rebuild the image you may also clone the repo and build the image yourself.
+
 ### **• Maintained by:**
 
 L'Arfo (arfo_dublo@boards.digital)⁠
@@ -17,6 +19,8 @@ https://hub.docker.com/r/arfodublo/cursor-in-browser
 
 ### **• Quick run :** 
 
+Using **Docker Hub** :
+
 ```
 docker run -d \
       -v your_path_to/cursor:/cursor \
@@ -24,8 +28,22 @@ docker run -d \
       -p 8050:8080 \
       -e CUSTOM_USER=cursor_user \
       -e PASSWORD=cursor_password \
-arfodublo/cursor-in-browser:1.2.0
+arfodublo/cursor-in-browser:latest
 ```
+
+Using **Github (ghcr.io)** :
+
+```
+docker run -d \
+  -v your_path_to/cursor:/cursor \
+  -v your_path_to/config:/config \
+  -p 8050:8080 \
+  -e CUSTOM_USER=cursor_user \
+  -e PASSWORD=cursor_password \
+ghcr.io/arfodublo/cursor-in-browser:latest
+```
+
+You can replace the **:latest** tag by the version and architecture you need (replacing :latest by :1.2.3-x64 or :1.2.3-arm64 for example).
 
 ### **• Important notes :**
 
