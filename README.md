@@ -46,6 +46,20 @@ docker run -d \
 ghcr.io/arfo-du-blo/cursor-in-browser:latest-x64
 ```
 
+### **• Volumes :**
+
+- /config : Configuration files for Cursor.
+- /cursor : Cursor data files.
+
+```
+docker run -d \
+      -v /home/user/cursor-in-browser/config:/config/.config/Cursor \ # Will map your Cursor configuration files in the host system
+      -p 8050:8080 \
+      -e CUSTOM_USER=cursor_user \
+      -e PASSWORD=cursor_password \
+arfodublo/cursor-in-browser:latest-x64
+```
+
 You can replace the **:latest-x64** tag (latest version for AMD processors) by the version and architecture you need (for example replace :latest-x64 by :latest-arm64 if working on ARM CPU or :1.2.3-x64 / :1.2.3-arm64 if you need a specific version).
 
 ### **• Important notes :**
