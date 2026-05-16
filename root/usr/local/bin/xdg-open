@@ -1,0 +1,28 @@
+#!/bin/sh
+
+target="$1"
+log_file="/cursor/opened-links.log"
+
+if [ -n "$target" ]; then
+    printf '%s\n' "$target" >> "$log_file" 2>/dev/null || true
+fi
+
+if command -v yad >/dev/null 2>&1; then
+    if [ -n "$target" ]; then
+        yad --entry \
+            --title="External Link Requested" \
+            --text="Copy (Ctrl+C) this link to open outside the container:" \
+            --entry-text="$target" \
+            --width=500 --button=gtk-ok 2>/dev/null || true
+    else
+        yad --info \
+            --title="External Link Requested" \
+            --text="xdg-open was invoked without a URL or file path." \
+            --width=400 --button=gtk-ok 2>/dev/null || true
+    fi
+else
+    echo "xdg-open intercepted. Target: $target"
+fi
+
+exit 0
+
