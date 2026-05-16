@@ -4,9 +4,9 @@
 
 This work have been **strongly** influenced by the following repo: https://github.com/sytone/obsidian-remote
 
-All versions of Cursor for x64 and arm64 architectures from **0.47.7** to **1.7.52** are now available !
+All versions of Cursor for x64 and arm64 architectures from **0.47.7** are now available ! We stopped versioning in docker hub and ghcr.io to **1.7.52** cursor version. **Latest** version is always based on last cursor version.
 
-**Cursor** versions with all required files are available under **cursor_versions** folder. The Dockerfile and Dockerfile.arm64 on the root directory are related to the latest version (**1.7.52**).
+** Cursor** versions with all required files are available under **cursor_versions** folder. The Dockerfile and Dockerfile.arm64 on the root directory are always related to the **latest** version using an API call to cursor latest download.
 
 You can use **GitHub Container Registry (ghcr)** or **Docker Hub** to download the image, if you prefer to rebuild the image you may also clone the repo and build the image yourself.
 
