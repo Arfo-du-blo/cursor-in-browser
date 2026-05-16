@@ -15,6 +15,7 @@ RUN echo "**** install packages ****" && \
     apt-get install -y --no-install-recommends curl fuse python3.11-venv libfuse2 python3-xdg libgtk-3-0 libnotify4 libatspi2.0-0 libsecret-1-0 libnss3 desktop-file-utils fonts-noto-color-emoji git ssh-askpass yad && \
     apt-get autoclean && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
+# Cursor API Download
 # Download Cursor AppImage and manage permissions
 RUN CURSOR_DOWNLOAD_URL=$(python3 -c "import urllib.request, json; response = urllib.request.urlopen('https://cursor.com/api/download?platform=linux-arm64&releaseTrack=stable'); data = json.load(response); print(data['downloadUrl'])") && \
     curl --location --output Cursor.AppImage "$CURSOR_DOWNLOAD_URL" && \
